@@ -1,8 +1,8 @@
-import { getThemeData  } from '../data/getThemeData.js';
-import { getUserShoppingCart } from '../data/getUserShoppingCart.js';
-import { html } from '../utilities/html.js';
+import { getThemeData  } from '../data/getThemeData';
+import { getUserShoppingCart } from '../data/getUserShoppingCart';
+import { html } from '../utilities/html';
 
-export async function purchase(req, res) {
+export async function purchase(req: any, res: any) {
     const [ themeData, userShoppingCart ] = await Promise.all([
       getThemeData(),
       getUserShoppingCart()

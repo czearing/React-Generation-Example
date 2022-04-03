@@ -1,6 +1,6 @@
 import express from 'express';
-import { landing } from './views/landing.js';
-import { purchase } from './views/purchase.js';
+import { landing } from './views/landing';
+import { purchase } from './views/purchase';
 
 const app = express();
 

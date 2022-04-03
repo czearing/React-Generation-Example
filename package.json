@@ -2,18 +2,25 @@
   "name": "express-example",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "src/index.ts",
   "type": "module",
   "scripts": {
-    "start": "node src/index.js",
+    "start": "node --experimental-specifier-resolution=node --loader ts-node/esm src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   },
   "devDependencies": {
-    "@types/express": "^4.17.13"
+    "typescript": "^4.6.3",
+    "ts-node": "^10.7.0",
+    "@types/express": "^4.17.13",
+    "@types/node": "14.14.33",
+    "@types/react": "^17.0.39",
+    "@types/react-dom": "17.0.9"
   }
 }

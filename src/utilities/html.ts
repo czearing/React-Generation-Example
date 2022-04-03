@@ -1,4 +1,4 @@
-export function html(head, body) {
+export function html(head: any, body: any) {
   return `
   <!doctype html>
   <html>
